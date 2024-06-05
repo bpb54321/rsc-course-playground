@@ -28,7 +28,7 @@ export function App({ shipId, search, ship, shipResults }) {
 		),
 		h(
 			'div',
-			{ className: 'details' },
+			{ className: 'details', "data-testid": 'details' },
 			shipId
 				? h(ShipDetails, { ship })
 				: h('p', null, 'Select a ship from the list to see details'),

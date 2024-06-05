@@ -17,6 +17,7 @@ export function SearchResults({ shipId: currentShipId, shipResults, search }) {
 				{
 					href,
 					style: { fontWeight: ship.id === currentShipId ? 'bold' : 'normal' },
+					"data-testid": "ship-link"
 				},
 				h('img', {
 					src: getImageUrlForShip(ship.id, { size: 20 }),
